@@ -1,0 +1,231 @@
+/*______________FONT - LINK_____________ */
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@500&family=Inter&family=Lexend+Deca:wght@200&family=Montserrat&family=Patrick+Hand&family=Poppins:wght@200;400&family=Quicksand:wght@500&family=Roboto+Flex:opsz,wght@8..144,300;8..144,400&family=Roboto+Mono:wght@300&display=swap');
+
+
+body{
+    background-color: #333;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container{
+    overflow: hidden;
+}
+
+.card{
+    height: 350px;
+    width: 260px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+.card__1,
+.card__2{
+    height: 100%;
+    width: 100%;y
+    position: absolute;
+    background-color: white;
+    border-radius:10px ;
+}
+
+.card__1{
+    z-index: 5;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card__1::before{
+    content: '';
+    height: 130px;
+    width:130px ;
+    background: hsla(318, 100%, 89%, 0.7);
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    /* filter: blur(2px); */
+    border-radius: 73% 27% 50% 50% / 39% 43% 57% 61% ;
+
+}
+
+
+.card__1::after{
+    content: '';
+    height: 130px;
+    width:130px ;
+    background: rgba(163, 226, 255, 0.5);
+    position: absolute;
+    top: 50px;
+    left: 50px;
+border-radius: 74% 26% 52% 48% / 37% 47% 53% 63% ;
+}
+
+
+.card__2{
+    transform: rotateY(180deg);
+}
+
+.container:hover .card{
+    transform: rotateY(180deg);
+  }
+
+
+  .content__1{
+      text-align: center;
+      position: relative;
+      top: 20px;
+  }
+
+  span.subtitle{
+    position: relative;
+    bottom: 15px; 
+  }
+
+  .underline{
+      border-bottom: 2px solid #ff79c7;
+  }
+
+
+.img
+{
+    height: 160px;
+    transform: rotate(-15deg);
+    position: relative;
+    top: 10px;
+    z-index: 8;
+}
+
+
+
+/* --------CARD__2--------- */
+
+.card__2::before{
+    content: '';
+    position: absolute;
+    clip-path: circle(50% at 65% 24%);
+    background-color: hsl(221, 100%, 84%, .7);
+    height: 200px;
+    width: 200px;
+    right: 0;
+    border-radius: 10px;
+}
+
+.img2{
+    height: 150px;
+    z-index: 15;
+    position: absolute;
+    transform: rotate(-15deg);
+    left: 80px;
+    top: 30px;
+}
+
+
+.content__2{
+    position: relative;
+    top: 350px;
+    left:30px;
+    font-size: .8rem;
+    line-height: 10px;
+    width: 100%;
+
+}
+
+
+.prize span{
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+.prize s{
+    color: hsl(0, 0%, 71%);
+}
+
+
+
+.size span{
+    display: inline-block;
+    position: relative;
+    left: 40px;
+    bottom: 30px;
+    text-align: center;
+    font-size: .7rem;
+    width:10px;
+    height: 8px;
+    margin: 2px;
+    padding: 3px;
+    border-radius: 2px;
+    border: 1px solid rgb(135, 183, 255);
+}
+
+.size span:hover{
+    background-color: rgb(102, 168, 255);
+    color: white;
+}
+
+
+.color{
+    height: 10px;
+}
+.color span{
+    background-color: rgb(177, 130, 184);
+    display: inline-block;
+    position: relative;
+    left: 50px;
+    bottom: 28px;
+    text-align: center;
+    font-size: .7rem;
+    width:10px;
+    height: 10px;
+    padding: 1px;
+    margin: 2px;
+    border-radius: 50px;
+  
+}
+
+.color span:nth-child(3){
+    background-color: rgb(169, 175, 252);
+}
+
+.color span:nth-child(4){
+    background-color: rgb(28, 150, 221);
+}
+
+
+h4{
+    position: relative;
+    bottom: 30px;
+    font-weight: 100;
+}
+
+button{
+    position: relative;
+    bottom: 30px;
+    padding: 3px;
+    width: 80px;
+    border-radius: 2px;
+    margin: 0  10px 0 0;
+    cursor: pointer;
+}
+
+
+.buy{
+    background-color: rgb(126, 163, 218);
+    color: white;
+    border: none;
+    padding: 5px;
+}
+
+.cart{
+    padding: 4px;
+
+    background-color: transparent;
+    border: 1px solid rgb(76, 146, 211);
+}
+
+
+
+.container:hover .content__2{
+    transform: translateY(-180px);
+    transition: 2s ease;
+}
